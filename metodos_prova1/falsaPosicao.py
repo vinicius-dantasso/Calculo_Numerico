@@ -1,6 +1,6 @@
 def funcao(x):
     # Função da Questão
-    return x**3 + x**2 + x - 2
+    return x**3-9*x+5
 
 def falsaPosicao(a, b, erro, iteracoes):
 # loop que realiza o cálculo da raiz da função
@@ -20,7 +20,7 @@ def falsaPosicao(a, b, erro, iteracoes):
 
 a = 0 # limite inferior do intervalo
 b = 1 # limite superior do intervalo
-erro = 0.0000000001 # erro desejado
+erro = 1e-6 # erro desejado
 iteracoes = 100
 
 x = falsaPosicao(a, b, erro, iteracoes)

@@ -2,11 +2,11 @@ import math
 
 def funcao(x):
     # Função da Questão
-    return x * x * x + x * x + x - 2
+    return x**3-9*x+5
 
 def g(x):
     # ponto g, ou seja, a aproximação da solução
-    return -math.sqrt(-(x*x*x) - x + 2)
+    return (x**3+5)/9
 
 def ponto_fixo(x0, erro, iteracoes):
     x = x0

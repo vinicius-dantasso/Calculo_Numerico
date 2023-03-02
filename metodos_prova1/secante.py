@@ -1,6 +1,6 @@
 def funcao(x):
     # aqui é definida a função desejada
-    return x * x * x - x * x + 2
+    return x**3-9*x+5
 
 def secante(x0, x1, erro, iteracoes):
     # loop que realiza o cálculo da raiz da função
@@ -17,7 +17,7 @@ def secante(x0, x1, erro, iteracoes):
 
 x0 = -1.5 # valor inicial x0
 x1 = -0.5 # valor inicial x1
-erro = 0.0000000001 # erro desejado
+erro = 1e-6 # erro desejado
 iteracoes = 100
 
 x = secante(x0, x1, erro, iteracoes)

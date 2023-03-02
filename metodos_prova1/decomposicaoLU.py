@@ -28,7 +28,7 @@ def resolverSistema(A, b):
     return x
 
 # Definindo a matriz dos coeficientes
-A = np.array([[1, 2, 3], [2, 5, 2], [6, 2, 4]])
+A = np.array([[3, 2, 4], [1, 1, 2], [4, 3, -2]])
 
 # Aplicando a decomposição LU
 LU = decomporLU(A)
@@ -43,7 +43,7 @@ print("Matriz U:")
 print(U)
 
 # Resolvendo o sistema Ly = b
-b = np.array([6, 5, 7])
+b = np.array([1, 2, 3])
 y = resolverSistema(L, b)
 
 # Resolvendo o sistema Ux = y

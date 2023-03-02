@@ -1,6 +1,6 @@
 def funcao(x):
     #Função da Questão
-    return x**3 - x**2 + 2 #Inserir a função aqui!!
+    return x**3-9*x+5 #Inserir a função aqui!!
 
 def bissec(a, b, erro, iteracoes):
     # loop que realiza o cálculo da raiz da função
@@ -21,9 +21,9 @@ def bissec(a, b, erro, iteracoes):
     return x
 
 # valores dos parâmetros
-a = -2 # limite inferior do intervalo
-b = -1 # limite superior do intervalo
-erro = 0.0000000001 # erro desejado
+a = 0 # limite inferior do intervalo
+b = 1 # limite superior do intervalo
+erro = 1e-6 # erro desejado
 iteracoes = 100
 
 # chamada da função bisseção
